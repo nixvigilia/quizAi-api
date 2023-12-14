@@ -118,7 +118,7 @@ AdminController.getQuizzes = async (req, res) => {
       res.status(200).json({success: true, result});
     }
   } catch (error) {
-    console.error("Error creating quiz:", error);
+    console.error("Error getting quizzes:", error);
     res.status(500).json({success: false, error: error.message});
   }
 };
